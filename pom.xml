@@ -175,13 +175,6 @@
   <!-- Here we add 3rd Party Dependencies -->
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-dependencies</artifactId>
-        <version>${version.activiti}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
 
       <!-- Activiti Cloud Runtime Bundle Modules for managed dependencies -->
       <dependency>
