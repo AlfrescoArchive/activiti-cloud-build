@@ -221,6 +221,7 @@
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-starter-test</artifactId>
         <version>${version.activiti.cloud.runtime-bundle}</version>
+        <scope>test</scope>
       </dependency>
 
 
@@ -239,6 +240,7 @@
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-services-test</artifactId>
         <version>${version.activiti.cloud.service-common}</version>
+        <scope>test</scope>
       </dependency>
 
 
@@ -442,12 +444,6 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-cloud-starters-tests</artifactId>
-        <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
