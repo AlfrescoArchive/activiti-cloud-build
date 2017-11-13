@@ -602,6 +602,10 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+      </plugin>
 
     </plugins>
     <pluginManagement>
