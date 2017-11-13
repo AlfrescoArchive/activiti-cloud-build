@@ -307,7 +307,7 @@
       <dependency>
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-connectors-starter</artifactId>
-        <version>${project.version}</version>
+        <version>${version.activiti.cloud.connectors}</version>
       </dependency>
 
       <!-- Spring Boot / Cloud / Stream dependencies -->
