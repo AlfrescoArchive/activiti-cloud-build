@@ -5,18 +5,18 @@
   <description>Activiti Cloud (Parent)</description>
   <groupId>org.activiti.cloud</groupId>
   <artifactId>activiti-cloud-parent</artifactId>
-  <version>7-201711-EA-SNAPSHOT</version>
+  <version>7-201711-EA-salaboy_1560_parent_deps_link-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
   <properties>
     <version.activiti>7-201711-EA-SNAPSHOT</version.activiti>
     <version.activiti.cloud>${project.version}</version.activiti.cloud>
-    <version.activiti.cloud.service-common>${project.version}</version.activiti.cloud.service-common>
-    <version.activiti.cloud.runtime-bundle>${project.version}</version.activiti.cloud.runtime-bundle>
-    <version.activiti.cloud.audit>${project.version}</version.activiti.cloud.audit>
-    <version.activiti.cloud.query>${project.version}</version.activiti.cloud.query>
-    <version.activiti.cloud.connectors>${project.version}</version.activiti.cloud.connectors>
+    <version.activiti.cloud.service-common>${version.activiti.cloud}</version.activiti.cloud.service-common>
+    <version.activiti.cloud.runtime-bundle>${version.activiti.cloud}</version.activiti.cloud.runtime-bundle>
+    <version.activiti.cloud.audit>${version.activiti.cloud}</version.activiti.cloud.audit>
+    <version.activiti.cloud.query>${version.activiti.cloud}</version.activiti.cloud.query>
+    <version.activiti.cloud.connectors>7-201711-EA-salaboy_1514_twitter_connector-SNAPSHOT</version.activiti.cloud.connectors>
 
     <!--configuration properties-->
     <jdk.version>1.8</jdk.version>
