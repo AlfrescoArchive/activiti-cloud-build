@@ -16,7 +16,7 @@
     <version.activiti.cloud.runtime-bundle>${version.activiti.cloud}</version.activiti.cloud.runtime-bundle>
     <version.activiti.cloud.audit>${version.activiti.cloud}</version.activiti.cloud.audit>
     <version.activiti.cloud.query>${version.activiti.cloud}</version.activiti.cloud.query>
-    <version.activiti.cloud.connectors>7-201711-EA-salaboy_1514_twitter_connector-SNAPSHOT</version.activiti.cloud.connectors>
+    <version.activiti.cloud.connectors>${version.activiti.cloud}</version.activiti.cloud.connectors>
 
     <!--configuration properties-->
     <jdk.version>1.8</jdk.version>
