@@ -104,8 +104,6 @@
     <assertj.version>3.8.0</assertj.version>
     <jsonunit.version>1.24.0</jsonunit.version>
     <!-- configurations for Spring REST docs-->
-    <spring.boot-starter-test.version>1.5.8.RELEASE</spring.boot-starter-test.version>
-    <spring-restdocs-mockmvc.version>1.2.2.RELEASE</spring-restdocs-mockmvc.version>
     <asciidoc.filename>index.adoc</asciidoc.filename>
     <asciidoctor.version>1.5.6</asciidoctor.version>
 
@@ -308,7 +306,7 @@
         <version>${version.activiti.cloud.audit}</version>
       </dependency>
 
-      <!-- Activiti Cloud Connectors --> 
+      <!-- Activiti Cloud Connectors -->
       <dependency>
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-connectors-starter</artifactId>
@@ -475,21 +473,6 @@
         <version>${jsonunit.version}</version>
         <scope>test</scope>
       </dependency>
-
-      <!-- Spring REST Docs -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <version>${spring.boot-starter-test.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.restdocs</groupId>
-        <artifactId>spring-restdocs-mockmvc</artifactId>
-        <version>${spring-restdocs-mockmvc.version}</version>
-        <scope>test</scope>
-      </dependency>
-
 
       <!-- TEST(DB) -->
       <dependency>
@@ -834,27 +817,27 @@
                   <module name="Checker">
                     <!-- Checks for whitespace. -->
                     <module name="FileTabCharacter">
-                      <property name="severity" value="error" />
-                      <property name="eachLine" value="true" />
+                      <property name="severity" value="error"/>
+                      <property name="eachLine" value="true"/>
                     </module>
                     <module name="TreeWalker">
                       <!-- Import settings: getting rid of redundant import, forbid star notation, defined order of imports. -->
-                      <module name="RedundantImport" />
+                      <module name="RedundantImport"/>
                       <module name="AvoidStarImport">
-                        <property name="excludes" value="org.junit.Assert,org.assertj.core.api.Assertions,org.mockito.Mockito" />
-                        <property name="allowClassImports" value="false" />
-                        <property name="allowStaticMemberImports" value="false" />
+                        <property name="excludes" value="org.junit.Assert,org.assertj.core.api.Assertions,org.mockito.Mockito"/>
+                        <property name="allowClassImports" value="false"/>
+                        <property name="allowStaticMemberImports" value="false"/>
                       </module>
                       <module name="CustomImportOrder">
-                        <property name="customImportOrderRules" value="STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###STATIC" />
-                        <property name="sortImportsInGroupAlphabetically" value="true" />
-                        <property name="separateLineBetweenGroups" value="true" />
+                        <property name="customImportOrderRules" value="STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###STATIC"/>
+                        <property name="sortImportsInGroupAlphabetically" value="true"/>
+                        <property name="separateLineBetweenGroups" value="true"/>
                       </module>
 
                       <module name="NeedBraces">
-                        <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO" />
+                        <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO"/>
                       </module>
-                      <module name="EqualsHashCode" />
+                      <module name="EqualsHashCode"/>
                     </module>
                   </module>
                 </checkstyleRules>
