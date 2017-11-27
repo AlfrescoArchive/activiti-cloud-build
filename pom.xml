@@ -5,7 +5,7 @@
   <description>Activiti Cloud (Parent)</description>
   <groupId>org.activiti.cloud</groupId>
   <artifactId>activiti-cloud-parent</artifactId>
-  <version>7-201711-EA-SNAPSHOT</version>
+  <version>7-201711-EA-elias_1548_auto_sign_on_release-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
