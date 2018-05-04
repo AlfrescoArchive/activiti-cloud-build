@@ -24,6 +24,7 @@
     <!-- dependencies -->
     <activiti-cloud-service-common.version>7-201803-EA-SNAPSHOT</activiti-cloud-service-common.version>
     <activiti-cloud-runtime-bundle.version>7-201803-EA-SNAPSHOT</activiti-cloud-runtime-bundle.version>
+    <activiti-cloud-app.version>7-201803-EA-SNAPSHOT</activiti-cloud-app.version>
     <activiti-cloud-audit.version>7-201803-EA-SNAPSHOT</activiti-cloud-audit.version>
     <activiti-cloud-query.version>7-201803-EA-SNAPSHOT</activiti-cloud-query.version>
     <activiti-cloud-connectors.version>7-201803-EA-SNAPSHOT</activiti-cloud-connectors.version>
@@ -53,6 +54,7 @@
   <modules>
     <module>activiti-cloud-service-common-dependencies</module>
     <module>activiti-cloud-runtime-bundle-dependencies</module>
+    <module>activiti-cloud-app-dependencies</module>
     <module>activiti-cloud-query-dependencies</module>
     <module>activiti-cloud-audit-dependencies</module>
     <module>activiti-cloud-connectors-dependencies</module>
