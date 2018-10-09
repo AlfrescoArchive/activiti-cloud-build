@@ -21,13 +21,13 @@
   <parent>
     <groupId>org.activiti.cloud.build</groupId>
     <artifactId>activiti-cloud-parent</artifactId>
-    <version>7.0.31</version>
+    <version>7.0.0.TEST1</version>
   </parent>
   <artifactId>activiti-cloud-dependencies-parent</artifactId>
   <packaging>pom</packaging>
   <name>Activiti Cloud :: Dependencies Parent</name>
   <properties>
-    <activiti-dependencies.version>7.0.45</activiti-dependencies.version>
+    <activiti-dependencies.version>7.0.0.TEST1</activiti-dependencies.version>
     <spring-cloud.version>Finchley.SR1</spring-cloud.version>
     <spring-cloud-k8s.version>0.3.0.RELEASE</spring-cloud-k8s.version>
   </properties>
