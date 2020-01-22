@@ -9,7 +9,7 @@
   </parent>
   <groupId>org.activiti.cloud.build</groupId>
   <artifactId>activiti-cloud-parent</artifactId>
-  <version>7.1.25</version>
+  <version>7.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Activiti Cloud :: Build</name>
   <inceptionYear>2017</inceptionYear>
