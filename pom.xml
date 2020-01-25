@@ -205,6 +205,12 @@
   <modules>
     <module>activiti-cloud-dependencies-parent</module>
   </modules>
+  <repositories>
+    <repository>
+      <id>activiti-releases</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
+    </repository>
+  </repositories>  
   <build>
     <pluginManagement>
       <plugins>
