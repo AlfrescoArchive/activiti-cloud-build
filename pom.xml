@@ -149,9 +149,9 @@
     </developer>
   </developers>
   <scm>
-    <url>http://github.com/Activiti/${project.artifactId}</url>
-    <connection>scm:git:git://github.com/Activiti/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/Activiti/${project.artifactId}.git</developerConnection>
+    <url>http://github.com/Activiti/${project.scm.repository}</url>
+    <connection>scm:git:git://github.com/Activiti/${project.scm.repository}.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/Activiti/${project.scm.repository}.git</developerConnection>
   </scm>
   <issueManagement>
     <system>GitHub</system>
@@ -159,25 +159,22 @@
   </issueManagement>
   <ciManagement>
     <system>Travis</system>
-    <url>https://travis-ci.org/Activiti/${project.artifactId}</url>
+    <url>https://travis-ci.com/Activiti/${project.artifactId}</url>
   </ciManagement>
   <properties>
+    <project.scm.repository>activiti-cloud-build</project.scm.repository>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <java.version>8</java.version>
+    <java.release>8</java.release>
+    <java.version>1.${java.release}</java.version>
+    <maven.compiler.release>${java.release}</maven.compiler.release>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
     <!-- configuration properties for tests-->
     <generated-assertions-folder>${project.build.directory}/generated-test-sources/assertions</generated-assertions-folder>
     <generated-assertions-package>org.activiti.test</generated-assertions-package>
-    <!-- Docker props -->
-    <docker.keycloak.port>8180</docker.keycloak.port>
-    <docker.keycloak.start.timeout>40000</docker.keycloak.start.timeout>
-    <docker.rabbitmq.tcp.port>5672</docker.rabbitmq.tcp.port>
-    <docker.rabbitmq.cli.port>15672</docker.rabbitmq.cli.port>
-    <docker.rabbitmq.start.timeout>15000</docker.rabbitmq.start.timeout>
     <!-- configurations for Spring REST docs -->
     <asciidoc.filename>index.adoc</asciidoc.filename>
     <!-- plugin versions -->
@@ -210,7 +207,7 @@
       <id>activiti-releases</id>
       <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
     </repository>
-  </repositories>  
+  </repositories>
   <build>
     <pluginManagement>
       <plugins>
@@ -274,7 +271,7 @@
                 <goal>process-asciidoc</goal>
               </goals>
               <configuration>
-                <sourceDocumentName>${asciidoc.filename}</sourceDocumentName>
+                <sourceDocumentName>index.adoc</sourceDocumentName>
                 <backend>html</backend>
                 <doctype>book</doctype>
                 <attributes>
@@ -376,7 +373,6 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <release>${java.version}</release>
           <showDeprecation>true</showDeprecation>
           <showWarnings>true</showWarnings>
           <optimize>true</optimize>
@@ -424,7 +420,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.8.2</version>
         <configuration>
           <deployAtEnd>true</deployAtEnd>
         </configuration>
